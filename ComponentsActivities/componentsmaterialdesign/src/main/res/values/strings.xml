@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicApp Components</string>
+    <string name="nome_da_musica">Nome da música</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="nova_musica">Nova Música</string>
+    <string name="nome">Nome</string>
+</resources>

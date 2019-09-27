@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExercicioProduto</string>
+    <string name="valor_total">Valor total a pagar</string>
+    <string name="porcentagem">Porcentagem de desconto</string>
+    <string name="preco">Preço do produto</string>
+    <string name="produto">Nome do produto</string>
+</resources>

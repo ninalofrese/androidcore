@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="description">PRODIGAL finally returns home, only to find the situation is far worse than he’s left it. His father is dead, Prodigal is an outlaw, and the Guardians of the Galaxy are covering the back of Prodigal’s greatest enemy: his own brother. The conclusion to the Prodigal Sun trilogy.</string>
+    <string name="preco_1">R$ 35,00</string>
+    <string name="preco_2">R$ 10,00</string>
+    <string name="preco_3">R$ 23,00</string>
+    <string name="valor_total">Valor total:</string>
+    <string name="finalizar">Finalizar</string>
+</resources>

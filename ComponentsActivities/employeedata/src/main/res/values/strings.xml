@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dados Funcionário</string>
+    <string name="enviar">Enviar</string>
+    <string name="profissao">Profissão</string>
+    <string name="endereco">Endereço</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="cadastro_de_funcionario">Cadastro de Funcionário</string>
+</resources>
