@@ -1,2 +1,2 @@
-include ':app'
+include ':comfragmentscars', ':comfragmentscolor', ':fragments', ':praias', ':comfragrev', ':comunicacaoentrefragments', ':comfragrevsemobjetos', ':activityfragment'
 rootProject.name='Fragments'

@@ -148,7 +148,7 @@ ENUM é uma lista que guarda uma lista de constantes.
 
 #### Fluxo de comunicação entre activities
 
-![Diagrama de comunicação entre activities](/comunicacaoentreactivities/comunicacaoactivities-2.jpg)
+![Diagrama de comunicação entre activities](ComponentsActivities/comunicacaoentreactivities/comunicacaoactivities-2.jpg)
 
 **Activity 1 - Origem**
 1. Primeiro registre a intenção de enviar dados para uma outra activity, instanciando uma **Intent** e informando qual a origem e qual o destino.
@@ -179,7 +179,7 @@ Vantagens:
 
 ### Ciclo de vida
 
-![Ciclo de vida](fragments/androidlifecycles.png)
+![Ciclo de vida](Fragments/fragments/androidlifecycles.png)
 
 **Diferenças**
 
