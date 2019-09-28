@@ -1,2 +1,2 @@
-include ':comfragmentscars', ':comfragmentscolor', ':fragments', ':praias', ':comfragrev', ':comunicacaoentrefragments', ':comfragrevsemobjetos', ':activityfragment'
+include ':comfragmentscars', ':comfragmentscolor', ':fragments', ':praias', ':comfragrev', ':comunicacaoentrefragments', ':comfragrevsemobjetos', ':activityfragment', ':revisaofinalfragments'
 rootProject.name='Fragments'
