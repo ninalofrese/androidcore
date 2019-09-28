@@ -6,7 +6,7 @@
     tools:context=".CalculoFragment">
 
     <ImageView
-        android:id="@+id/imagem_balanca"
+        android:id="@+id/imagem_fragment"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/imagem_balanca"
+        android:layout_below="@id/imagem_fragment"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"

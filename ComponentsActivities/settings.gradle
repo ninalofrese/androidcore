@@ -1,2 +1,2 @@
-include ':app', ':comactivitiesexercicio', ':comactivitiesloginproducts', ':componentsmaterialdesign', ':comunicacaoentreactivities', ':employeedata', ':exerciciocadastrousuarios', ':exercicioproduto', ':gamescart', ':navigation'
+include ':app', ':comactivitiesexercicio', ':comactivitiesloginproducts', ':componentsmaterialdesign', ':comunicacaoentreactivities', ':employeedata', ':exerciciocadastrousuarios', ':exercicioproduto', ':gamescart', ':navigation', ':listaalunos'
 rootProject.name = 'ComponentsActivities'
