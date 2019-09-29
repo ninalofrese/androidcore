@@ -10,12 +10,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import static com.example.seuimc.ShowActivity.DADOS_KEY;
 
 public class MainActivity extends AppCompatActivity implements Comunicador {
-    private Button btnHome;
+    public static final String OPCAO_KEY = "opcao";
+    private FloatingActionButton btnHome;
+    private Pessoa pessoaDados;
 
     public static final String PA_KEY = "peso e altura";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +36,7 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
         if (intent != null && intent.getExtras() != null) {
             Bundle bundle = intent.getExtras();
 
-            Pessoa pessoaDados = bundle.getParcelable(DADOS_KEY);
-
-            setBundleToFragment(pessoaDados, PA_KEY);
+            pessoaDados = bundle.getParcelable(DADOS_KEY);
         }
 
         btnHome.setOnClickListener(new View.OnClickListener() {
@@ -44,9 +47,11 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
         });
     }
 
-    public void setBundleToFragment(Pessoa pessoa, String CHAVE) {
+    //Manda como um extra o objeto Pessoa, recebido pelo bundle da intent gerada em ShowActivity
+    public void setOptionToFragment(Opcao opcao, String CHAVE) {
         Bundle bundle = new Bundle();
-        bundle.putParcelable(CHAVE, pessoa);
+        bundle.putParcelable(CHAVE, opcao);
+        bundle.putParcelable(PA_KEY, pessoaDados);
         Fragment calculoFragment = new CalculoFragment();
         calculoFragment.setArguments(bundle);
         replaceFragment(R.id.container_up, calculoFragment);
@@ -59,9 +64,8 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
         transaction.commit();
     }
 
-
     @Override
-    public void recebeMensagem(Pessoa pessoa) {
-        setBundleToFragment(pessoa, PA_KEY);
+    public void recebeMensagem(Opcao opcao) {
+        setOptionToFragment(opcao, OPCAO_KEY);
     }
 }

@@ -3,25 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoFragment">
+    tools:context=".CalculoFragment">
 
     <ImageView
-        android:id="@+id/imagem_info"
+        android:id="@+id/imagem_fragment"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:layout_marginTop="48dp"
         android:scaleType="centerInside"
-        android:src="@drawable/imginfo"
+        android:src="@drawable/imgcalculo"
         />
 
     <TextView
-        android:id="@+id/texto_informacao"
+        android:id="@+id/texto_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/imagem_info"
+        android:layout_below="@id/imagem_fragment"
+        android:textAlignment="center"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"

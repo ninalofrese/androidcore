@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/display_msg_nome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"

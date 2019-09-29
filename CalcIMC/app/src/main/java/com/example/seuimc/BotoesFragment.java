@@ -24,7 +24,6 @@ public class BotoesFragment extends Fragment {
     private Button btnCalcular;
     private Button btnInformacao;
     private Comunicador comunicador;
-    private Pessoa pessoa;
 
     public BotoesFragment() {
         // Required empty public constructor
@@ -52,21 +51,25 @@ public class BotoesFragment extends Fragment {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Opcao calculo = new Opcao(R.drawable.imgcalculo, "calculo");
 
-                if (!getArguments().isEmpty()) {
-                    pessoa = getArguments().getParcelable(PA_KEY);
-
-                    if (pessoa != null) {
-
-                        if (comunicador != null) {
-                            comunicador.recebeMensagem(pessoa);
-                        }
-                    }
+                if (comunicador != null) {
+                    comunicador.recebeMensagem(calculo);
                 }
+
             }
         });
 
+        btnInformacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Opcao informacoes = new Opcao(R.drawable.imginfo, "O IMC (Índice de Massa Corporal) é uma ferramenta usada para detectar casos de obesidade ou desnutrição, principalmente em estudos que envolvem grandes populações.");
 
+                if (comunicador != null) {
+                    comunicador.recebeMensagem(informacoes);
+                }
+            }
+        });
 
 
         return view;

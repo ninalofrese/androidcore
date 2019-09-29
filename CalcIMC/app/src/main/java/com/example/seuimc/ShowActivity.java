@@ -26,6 +26,7 @@ public class ShowActivity extends AppCompatActivity {
 
     public static final String DADOS_KEY = "dados";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,7 @@ public class ShowActivity extends AppCompatActivity {
             btnVamosLa.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //Envia o objeto Pessoa para a MainActivity
                     Intent intent = new Intent(ShowActivity.this, MainActivity.class);
                     Bundle bundle = new Bundle();
 
