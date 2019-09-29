@@ -1,4 +1,4 @@
-package com.example.seuimc;
+package com.example.seuimc.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.seuimc.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

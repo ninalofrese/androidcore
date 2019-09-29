@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.revisao.R;
-import com.example.revisaofinal.views.Comunicador;
+import com.example.revisaofinal.adapters.ListaMusicasAdapter;
+import com.example.revisaofinal.interfaces.Comunicador;
+import com.example.revisaofinal.models.Musica;
 import com.example.revisaofinal.views.fragment.BandaFragment;
 import com.example.revisaofinal.views.fragment.ComidaFragment;
 import com.example.revisaofinal.views.fragment.FotoBandaFragment;
@@ -19,20 +21,27 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import com.example.revisaofinal.views.fragment.ListasMusicasFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
+
+import java.util.ArrayList;
+import java.util.List;
 
 //Implemetar a interface Comunicador e sobrescrever seu respectivo método
 public class HomeActivity extends AppCompatActivity implements Comunicador {
     private DrawerLayout drawer;
     private AppBarConfiguration mAppBarConfiguration;
     public static final String BANDA_KEY = "banda";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +68,7 @@ public class HomeActivity extends AppCompatActivity implements Comunicador {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_music, R.id.nav_food)
+                R.id.nav_music, R.id.nav_food, R.id.nav_musics)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -73,13 +82,14 @@ public class HomeActivity extends AppCompatActivity implements Comunicador {
                     replaceFragment(new BandaFragment());
                 } else if (id == R.id.nav_food) {
                     replaceFragment(new ComidaFragment());
+                }else if (id == R.id.nav_musics) {
+                    replaceFragment(new ListasMusicasFragment());
                 }
 
                 drawer.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
-
     }
 
     //Sobreescrever o método onBackPressed e implementar a lógica

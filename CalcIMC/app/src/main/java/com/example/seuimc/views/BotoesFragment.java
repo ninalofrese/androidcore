@@ -1,4 +1,4 @@
-package com.example.seuimc;
+package com.example.seuimc.views;
 
 
 import android.content.Context;
@@ -6,15 +6,15 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import static com.example.seuimc.MainActivity.PA_KEY;
+import com.example.seuimc.R;
+import com.example.seuimc.interfaces.Comunicador;
+import com.example.seuimc.models.Opcao;
 
 
 /**

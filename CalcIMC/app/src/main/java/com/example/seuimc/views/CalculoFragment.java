@@ -1,4 +1,4 @@
-package com.example.seuimc;
+package com.example.seuimc.views;
 
 
 import android.graphics.drawable.Drawable;
@@ -12,12 +12,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.seuimc.R;
+import com.example.seuimc.models.Opcao;
+import com.example.seuimc.models.Pessoa;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Locale;
 
-import static com.example.seuimc.MainActivity.OPCAO_KEY;
-import static com.example.seuimc.MainActivity.PA_KEY;
+import static com.example.seuimc.views.MainActivity.OPCAO_KEY;
+import static com.example.seuimc.views.MainActivity.PA_KEY;
 
 
 /**

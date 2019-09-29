@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.revisao.R;
-import com.example.revisaofinal.views.Comunicador;
+import com.example.revisaofinal.interfaces.Comunicador;
 
 /**
  * A simple {@link Fragment} subclass.

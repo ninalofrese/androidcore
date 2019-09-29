@@ -1,19 +1,21 @@
-package com.example.seuimc;
+package com.example.seuimc.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.seuimc.R;
+import com.example.seuimc.models.Pessoa;
+
 import java.util.Locale;
 
-import static com.example.seuimc.SendActivity.IMAGEM_KEY;
-import static com.example.seuimc.SendActivity.PESSOA_KEY;
+import static com.example.seuimc.views.SendActivity.IMAGEM_KEY;
+import static com.example.seuimc.views.SendActivity.PESSOA_KEY;
 
 public class ShowActivity extends AppCompatActivity {
     private TextView displayNome;

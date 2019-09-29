@@ -1,4 +1,4 @@
-package com.example.seuimc;
+package com.example.seuimc.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.seuimc.R;
+import com.example.seuimc.models.Pessoa;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class SendActivity extends AppCompatActivity {

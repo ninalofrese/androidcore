@@ -1,4 +1,4 @@
-package com.example.seuimc;
+package com.example.seuimc.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
