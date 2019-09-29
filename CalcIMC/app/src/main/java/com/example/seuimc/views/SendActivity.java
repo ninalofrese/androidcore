@@ -3,6 +3,7 @@ package com.example.seuimc.views;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,7 +44,7 @@ public class SendActivity extends AppCompatActivity {
                 Intent intent = new Intent(SendActivity.this, ShowActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putParcelable(PESSOA_KEY, pessoa);
-                bundle.putInt(IMAGEM_KEY, R.drawable.imgprofile); //passar a imagem, nao o ID do imageView
+                bundle.putInt(IMAGEM_KEY, R.drawable.imgprofile); //passa a imagem, nao o ID do imageView
                 intent.putExtras(bundle);
 
                 startActivity(intent);

@@ -43,7 +43,6 @@ public class ShowActivity extends AppCompatActivity {
 
             pessoa = bundle.getParcelable(PESSOA_KEY);
             Integer imagem = bundle.getInt(IMAGEM_KEY);
-            //Drawable drawable = getResources().getDrawable(imagem);
             String boasVindas = "Seja bem-vindo(a), %s!\nEsse é um aplicativo que te ajuda a saber e calcular o seu Índice de Massa Corporal";
 
             if (pessoa != null) {
