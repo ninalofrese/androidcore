@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_professores"
+        android:icon="@drawable/ic_group"
+        android:title="Professores" />
+
+    <item
+        android:id="@+id/navigation_alunos"
+        android:icon="@drawable/ic_school"
+        android:title="Alunos" />
+
+    <item
+        android:id="@+id/navigation_cursos"
+        android:icon="@drawable/ic_library_books"
+        android:title="Cursos" />
+
+    <item
+        android:id="@+id/navigation_pesquisar"
+        android:icon="@drawable/ic_search"
+        android:title="Pesquisar" />
+
+</menu>

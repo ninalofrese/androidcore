@@ -28,20 +28,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
-
-import java.util.ArrayList;
-import java.util.List;
 
 //Implemetar a interface Comunicador e sobrescrever seu respectivo método
 public class HomeActivity extends AppCompatActivity implements Comunicador {
     private DrawerLayout drawer;
     private AppBarConfiguration mAppBarConfiguration;
     public static final String BANDA_KEY = "banda";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements Comunicador {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(container, fragment);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
 
