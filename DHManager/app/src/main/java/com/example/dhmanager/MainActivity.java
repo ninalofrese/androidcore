@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public void replaceFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, fragment)
+                .addToBackStack(null)
                 .commit();
     }
 }
