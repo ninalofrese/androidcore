@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.revisaofinal.views.activity.DetalheMusicaActivity"></activity>
         <activity
             android:name="com.example.revisaofinal.views.activity.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.revisaofinal.views.activity.WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -9,17 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.revisao.R;
+import com.example.revisaofinal.interfaces.RecyclerViewOnClick;
 import com.example.revisaofinal.models.Musica;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
 public class ListaMusicasAdapter extends RecyclerView.Adapter<ListaMusicasAdapter.ViewHolder> {
     private List<Musica> listaMusicas;
+    private RecyclerViewOnClick listener;
 
-    public ListaMusicasAdapter(List<Musica> listaMusicas) {
+    public ListaMusicasAdapter(List<Musica> listaMusicas, RecyclerViewOnClick listener) {
         this.listaMusicas = listaMusicas;
+        this.listener = listener;
     }
 
     @NonNull
@@ -31,8 +32,15 @@ public class ListaMusicasAdapter extends RecyclerView.Adapter<ListaMusicasAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Musica musica = listaMusicas.get(position);
+        final Musica musica = listaMusicas.get(position);
         holder.onBind(musica);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.levarParaDetalhe(musica);
+            }
+        });
     }
 
     @Override
