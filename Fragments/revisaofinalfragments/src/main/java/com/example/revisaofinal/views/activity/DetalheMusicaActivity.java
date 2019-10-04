@@ -24,6 +24,10 @@ public class DetalheMusicaActivity extends AppCompatActivity {
 
         initViews();
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //show back button
+        }
+
         if (getIntent() != null && getIntent().getExtras() != null) {
             Bundle bundle = getIntent().getExtras();
             Musica musica = bundle.getParcelable(MUSICA_KEY);
@@ -42,5 +46,12 @@ public class DetalheMusicaActivity extends AppCompatActivity {
         txtMusica = findViewById(R.id.musica_nome);
         txtAlbum = findViewById(R.id.musica_album);
         txtLetra = findViewById(R.id.musica_letra);
+    }
+
+    //Set action on back button
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
